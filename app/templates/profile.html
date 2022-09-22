@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<div class="rounded-3 p-3 center text-light p-card shadow-lg">
+  <img width="100%" src="{{url_for('static', filename='images/d.png')}}" />
+  <img
+    width="30%"
+    class="rounded-circle"
+    src="{{url_for('static', filename='images/me.jpg')}}"
+  />
+  <h1>Abdulmumin Abdulkarim</h1>
+  <p>fixing old relationships is better than making new ones</p>
+
+  <div class="d-flex flex-row">
+    <p class=""><i class="fa-solid fa-suitcase"></i> Developer</p>
+    <p class="mx-3"></p>
+  </div>
+
+  <h6><i class="fa fa-internet"></i>Socials</h6>
+  <div class="d-flex justify-content-between m-3">
+    <a href="#"><i class="fa-brands fs-1 fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fs-1 fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fs-1 fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-solid fs-1 fa-envelope"></i></a>
+  </div>
+</div>
+{% endblock content%}
