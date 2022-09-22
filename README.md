@@ -1,2 +1,2 @@
 # onelink
-share all your social accounts with one like
+share all your social accounts with one link
