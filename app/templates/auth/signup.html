@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container center mt-3 shadow-md border rounded-3">
+  <div class="row align-items-end p-4">
+    <div class="col">
+      <form method="POST">
+        {{form.hidden_tag()}} {{form.name(class="form-control
+        mb-3",placeholder="Username")}} {{form.password(class="form-control
+        mb-3", type="password",placeholder="password")}}
+        {{form.confirm(class="form-control mb-3",
+        type="password",placeholder="confirm password")}}
+        {{form.submit(class='btn-info btn text-light btn-lg w-100 mb-3' )}}
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %}
