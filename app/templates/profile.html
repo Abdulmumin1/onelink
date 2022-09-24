@@ -1,25 +1,52 @@
 {% extends 'base.html' %} {% block content %}
-<div class="rounded-3 p-3 center text-light p-card shadow-lg">
-  <img width="100%" src="{{url_for('static', filename='images/d.png')}}" />
-  <img
-    width="30%"
-    class="rounded-circle"
-    src="{{url_for('static', filename='images/me.jpg')}}"
-  />
-  <h1>{{current_user.name}}</h1>
-  <p>fixing old relationships is better than making new ones</p>
 
-  <div class="d-flex flex-row">
-    <p class=""><i class="fa-solid fa-suitcase"></i> Developer</p>
-    <p class="mx-3"></p>
+<div class="d-flex justify-content-between">
+  <div class="d-flex m-3 flex-column justify-content-between">
+    <div class="shadow p-3 rounded-3 d-flex flex-column text-center widget">
+      <h5><i class="fa-brands fa-github"></i> Github</h5>
+      <input type="button" class="btn btn-dark rounded-3" value="Follow" />
+    </div>
+
+    <div class="shadow p-3 rounded-3 d-flex flex-column text-center widget">
+      <h5><i class="fa-brands fa-hashnode"></i> Hashnode</h5>
+      <input type="button" class="btn btn-dark rounded-3" value="Follow" />
+    </div>
   </div>
 
-  <h6><i class="fa fa-internet"></i>Socials</h6>
-  <div class="d-flex justify-content-between m-3">
-    <a href="#"><i class="fa-brands fs-1 fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fs-1 fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fs-1 fa-whatsapp"></i></a>
-    <a href="#"><i class="fa-solid fs-1 fa-envelope"></i></a>
+  <div class="rounded-3 p-3 m-5 align-items-center p-card shadow-lg">
+    <img width="100%" src="{{url_for('static', filename='images/d.png')}}" />
+    <img
+      width="30%"
+      class="rounded-circle"
+      src="{{url_for('static', filename='images/me.jpg')}}"
+    />
+    <h1>{{current_user.name}}</h1>
+    <p>fixing old relationships is better than making new ones</p>
+
+    <div class="d-flex flex-row">
+      <p class=""><i class="fa-solid fa-suitcase"></i> Developer</p>
+      <p class="mx-3"></p>
+    </div>
+
+    <h6><i class="fa fa-internet"></i>Socials</h6>
+    <div class="d-flex justify-content-between m-3">
+      <a href="#"><i class="fa-brands fs-1 fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fs-1 fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fs-1 fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-solid fs-1 fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column justify-content-between">
+    <div class="shadow p-3 rounded-3 d-flex flex-column text-center widget">
+      <h5><i class="fa-brands fa-youtube"></i> Youtube</h5>
+      <input type="button" class="btn btn-danger rounded-3" value="Subscribe" />
+    </div>
+
+    <div class="shadow m-3 p-3 rounded-3 d-flex flex-column text-center widget">
+      <h5><i class="fa-brands fa-internet"></i>Blog</h5>
+      <input type="button" class="btn btn-dark rounded-3" value="Follow" />
+    </div>
   </div>
 </div>
 {% endblock content%}
